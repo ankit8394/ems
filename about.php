@@ -29,12 +29,12 @@
                 <div class="container-fluid" id="extra">
                     <div class="row">
                         <div class="col-sm-12" id="about">
-                        <div id="yes">
-                        <h1>Ankit</h1>
-                        <h2>+91 8394834953</h2>
-                        <h2>ankit0839483@gmail.com</h2>
-                        <h2>Rishikesh 249201</h2>
-                        </div>
+                            <div id="yes">
+                                <h1>Ankit</h1>
+                                <h2>+91 8394834953</h2>
+                                <h2>ankit0839483@gmail.com</h2>
+                                <h2>Rishikesh 249201</h2>
+                            </div>
                         </div>
                     </div>
                     

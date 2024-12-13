@@ -1,6 +1,5 @@
 <div class="col-sm-2" id="hide">
                 <aside id="sidebar">
-                    
                          <div  class="side-div">
                             <ul class="ul-4">
                                 <button id="btn-big" class="admin-btn-side"><i class="fa-solid fa-x"></i></button>
