@@ -499,6 +499,11 @@ a:focus {
 .slider_section .img-box img {
   width: 100%;
 }
+.img-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .slider_section .carousel-indicators {
   position: unset;
@@ -733,8 +738,12 @@ a:focus {
   opacity: 0;
 }
 
-.project_section .box .detail-box h5 {
+.project_section  {
   font-weight: bold;
+}
+.box .detail-box h5{
+  font-weight: bold;
+  text-align: center;
 }
 
 .project_section .owl-item.active.center .box .detail-box {

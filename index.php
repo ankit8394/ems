@@ -91,7 +91,7 @@
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
             <a class="navbar-brand" href="index.php">
-              <img src="assets/logo.jpeg" alt="company-logo">
+              <img src="assets/logo.jpeg" alt="company-logo" style="height:50px;width:50px">
             </a>
             </a>
 
@@ -120,19 +120,11 @@
                   <a class="nav-link" href="contact.php">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"> Login</a>
+                  <a class="nav-link" href="mainlogin.php"> Login</a>
                 </li>
-                <form class="form-inline">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </form>
+                
               </ul>
-              <div class="quote_btn-container">
-                <a href="" class="quote_btn">
-                  Get A Quote
-                </a>
-              </div>
+              
             </div>
           </nav>
         </div>
@@ -154,10 +146,10 @@
                       SERVICES
                     </h1>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="contact.php" class="btn1">
                         Contact Us
                       </a>
-                      <a href="" class="btn2">
+                      <a href="about.php" class="btn2">
                         About Us
                       </a>
                     </div>
@@ -177,10 +169,10 @@
                       SERVICES
                     </h1>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="contact.php" class="btn1">
                         Contact Us
                       </a>
-                      <a href="" class="btn2">
+                      <a href="about.php" class="btn2">
                         About Us
                       </a>
                     </div>
@@ -200,10 +192,10 @@
                       SERVICES
                     </h1>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="contact.php" class="btn1">
                         Contact Us
                       </a>
-                      <a href="" class="btn2">
+                      <a href="about.php" class="btn2">
                         About Us
                       </a>
                     </div>
@@ -223,10 +215,10 @@
                       SERVICES
                     </h1>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="contact.php" class="btn1">
                         Contact Us
                       </a>
-                      <a href="" class="btn2">
+                      <a href="about.php" class="btn2">
                         About Us
                       </a>
                     </div>
@@ -246,10 +238,10 @@
                       SERVICES
                     </h1>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="contact.php" class="btn1">
                         Contact Us
                       </a>
-                      <a href="" class="btn2">
+                      <a href="about.php" class="btn2">
                         About Us
                       </a>
                     </div>
@@ -774,7 +766,9 @@
         <div class="col-lg-7 col-md-6 px-0">
           <div class="map_container">
             <div class="map">
-              <div id="googleMap"></div>
+              <div id="googleMap">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113008.77360956471!2d78.1881298294586!3d30.078344409011677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39093e67cf93f111%3A0xcc78804a6f941bfe!2sRishikesh%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1734624081963!5m2!1sen!2sin" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -791,19 +785,19 @@
         <a href="">
           <i class="fa fa-phone" aria-hidden="true"></i>
           <span>
-            Call : +01 123455678990
+            Call : +91 8394834953
           </span>
         </a>
         <a href="">
           <i class="fa fa-envelope" aria-hidden="true"></i>
           <span>
-            Email : demo@gmail.com
+            Email : ankit0839483@gmail.com
           </span>
         </a>
         <a href="">
           <i class="fa fa-map-marker" aria-hidden="true"></i>
           <span>
-            Location
+            Rishikesh Dehradun India
           </span>
         </a>
       </div>
@@ -872,7 +866,7 @@
           <div class="col-md-2">
             <div class="info_logo">
               <a href="">
-                <img src="images/logo2.png" alt="">
+                <img src="assets/logo.jpeg" alt="" style="border-radius:50%;height:50px;width:50px">
               </a>
             </div>
           </div>
@@ -905,7 +899,7 @@
     <div class="container">
       <p>
         &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="#">Developr - <span style="color:#f07b26">Ankit</span></a>
+        <a href="#">Developr - <span style="color:#f07b26;font-weight:600">Ankit</span></a>
       </p>
     </div>
   </footer>
