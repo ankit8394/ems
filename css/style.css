@@ -370,34 +370,6 @@ a:focus {
           align-items: center;
 }
 
-.quote_btn-container a {
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.quote_btn-container a span {
-  margin-left: 5px;
-}
-
-.quote_btn-container a:hover {
-  color: #252525;
-}
-
-.quote_btn-container .quote_btn {
-  display: inline-block;
-  padding: 5px 25px;
-  background-color: #f07b26;
-  color: #ffffff;
-  border-radius: 5px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  border: none;
-}
-
-.quote_btn-container .quote_btn:hover {
-  background-color: #bc570d;
-}
-
 /*end header section*/
 /* slider section */
 .slider_section {
