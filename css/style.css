@@ -256,11 +256,13 @@ a:focus {
   border-radius: 5px;
   -webkit-transition: all .3s;
   transition: all .3s;
+  margin: 0 1px;
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
   color: #ffffff;
   background-color: #000000;
+
 }
 
 .custom_nav-container .nav_search-btn {

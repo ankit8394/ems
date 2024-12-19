@@ -55,19 +55,19 @@
             </span>
           </div>
           <div class="contact_nav">
-            <a href="">
+            <a href="callto:8394834953">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
                 Call : +91 8394834953
               </span>
             </a>
-            <a href="">
+            <a href="mailto:ankit0839483@gmail.com">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
                 Email : ankit0839483@gmail.com
               </span>
             </a>
-            <a href="">
+            <a href="#">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
                 Rishikesh Dehradun India
@@ -93,7 +93,6 @@
             <a class="navbar-brand" href="index.php">
               <img src="assets/logo.jpeg" alt="company-logo" style="height:50px;width:50px">
             </a>
-            </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class=""> </span>
@@ -114,7 +113,7 @@
                   <a class="nav-link" href="project.php">Project</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="testimonial.">Testimonial</a>
+                  <a class="nav-link" href="testimonial.php">Testimonial</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.php">Contact Us</a>
@@ -741,26 +740,27 @@
       </div>
       <div class="row">
         <div class="col-lg-4 col-md-5 offset-md-1">
-          <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="btn_box">
-                <button>
-                  SEND
-                </button>
-              </div>
+        <div class="form_container">
+            <div class="contact-form">
+                <form action="https://api.web3forms.com/submit"
+                  method="POST">
+                  <input type="hidden" name="access_key" value="c567428c-64c7-4446-ae8f-fe4502ed9e69">
+                  <div>
+                    <input type="text" id="from_name" name="from_name" placeholder="Your Name" required>
+                  </div>
+                  <div>
+                    <input type="email" id="from_email" name="from_email" placeholder="Your Email" required>
+                    </div>
+                  <div>
+                    <input type="text" class="message-box" placeholder="Message" />
+                  </div>
+                  <div class="btn_box">
+                    <button>
+                      SEND
+                    </button>
+                  </div>
             </form>
+            </div>
           </div>
         </div>
         <div class="col-lg-7 col-md-6 px-0">
@@ -865,26 +865,23 @@
         <div class="row">
           <div class="col-md-2">
             <div class="info_logo">
-              <a href="">
+              <a href="index.php">
                 <img src="assets/logo.jpeg" alt="" style="border-radius:50%;height:50px;width:50px">
               </a>
             </div>
           </div>
           <div class="col-md-4 ml-auto">
-            <div class="social_box">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </div>
+          <div class="social_box">
+            <a target="_blank" href="https://github.com/ankit8394">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/ankit-5ab596292/">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/mr_ankit.0411/profilecard/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
           </div>
         </div>
 
@@ -919,10 +916,7 @@
   <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
+
 
 </body>
 

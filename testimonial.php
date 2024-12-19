@@ -4,15 +4,8 @@
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
 
-  <title>Fonicy</title>
+  <title>Project-EMS</title>
 
 
   <!-- bootstrap core css -->
@@ -57,36 +50,33 @@
             </span>
           </div>
           <div class="contact_nav">
-            <a href="">
+            <a href="callto:8394834953">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
-                Call : +01 123455678990
+                Call : +91 8394834953
               </span>
             </a>
-            <a href="">
+            <a href="mailto:ankit0839483@gmail.com">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
-                Email : demo@gmail.com
+                Email : ankit0839483@gmail.com
               </span>
             </a>
-            <a href="">
+            <a href="#">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
-                Location
+                Rishikesh Dehradun India
               </span>
             </a>
           </div>
           <div class="social_box">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
+            <a target="_blank" href="https://github.com/ankit8394">
+              <i class="fa fa-github" aria-hidden="true"></i>
             </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
+            <a target="_blank" href="https://www.linkedin.com/in/ankit-5ab596292/">
               <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a target="_blank" href="https://www.instagram.com/mr_ankit.0411/profilecard/">
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </div>
@@ -95,9 +85,8 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
-              <img src="images/logo.png" alt="">
-            </a>
+          <a class="navbar-brand" href="#">
+              <img src="assets/logo.jpeg" alt="company-logo" style="height:50px;width:50px">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -108,37 +97,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
                 <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html">Services</a>
+                  <a class="nav-link" href="service.php">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
+                  <a class="nav-link" href="about.php"> About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="project.html">Project</a>
+                  <a class="nav-link" href="project.php">Project</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="testimonial.html">Testimonial</a>
+                  <a class="nav-link" href="testimonial.php">Testimonial</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
+                  <a class="nav-link" href="contact.php">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"> Login</a>
+                  <a class="nav-link" href="mainlogin.php"> Login</a>
                 </li>
-                <form class="form-inline">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </form>
               </ul>
-              <div class="quote_btn-container">
-                <a href="" class="quote_btn">
-                  Get A Quote
-                </a>
-              </div>
             </div>
           </nav>
         </div>
@@ -278,26 +257,26 @@
   <section class="info_section ">
 
     <div class="container">
-      <div class="contact_nav">
-        <a href="">
-          <i class="fa fa-phone" aria-hidden="true"></i>
-          <span>
-            Call : +01 123455678990
-          </span>
-        </a>
-        <a href="">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-          <span>
-            Email : demo@gmail.com
-          </span>
-        </a>
-        <a href="">
-          <i class="fa fa-map-marker" aria-hidden="true"></i>
-          <span>
-            Location
-          </span>
-        </a>
-      </div>
+    <div class="contact_nav">
+            <a href="callto:8394834953">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : +91 8394834953
+              </span>
+            </a>
+            <a href="mailto:ankit0839483@gmail.com">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                Email : ankit0839483@gmail.com
+              </span>
+            </a>
+            <a href="#">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Rishikesh Dehradun India
+              </span>
+            </a>
+          </div>
 
       <div class="info_top ">
         <div class="row info_main_row">
@@ -307,12 +286,12 @@
                 QUICK LINKS
               </h4>
               <div class="info_links_menu">
-                <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
-                <a class="" href="service.html">Services</a>
-                <a class="" href="about.html"> About</a>
-                <a class="" href="project.html">Project</a>
-                <a class="" href="testimonial.html">Testimonial</a>
-                <a class="" href="contact.html">Contact Us</a>
+                <a class="" href="index.php">Home <span class="sr-only">(current)</span></a>
+                <a class="" href="service.php">Services</a>
+                <a class="" href="about.php"> About</a>
+                <a class="" href="project.php">Project</a>
+                <a class="" href="testimonial.php">Testimonial</a>
+                <a class="" href="contact.php">Contact Us</a>
               </div>
             </div>
           </div>
@@ -362,26 +341,23 @@
         <div class="row">
           <div class="col-md-2">
             <div class="info_logo">
-              <a href="">
-                <img src="images/logo2.png" alt="">
+            <a href="#">
+                <img src="assets/logo.jpeg" alt="" style="border-radius:50%;height:50px;width:50px">
               </a>
             </div>
           </div>
           <div class="col-md-4 ml-auto">
-            <div class="social_box">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </div>
+          <div class="social_box">
+            <a target="_blank" href="https://github.com/ankit8394">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/ankit-5ab596292/">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/mr_ankit.0411/profilecard/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
           </div>
         </div>
 
@@ -396,7 +372,7 @@
     <div class="container">
       <p>
         &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
+        <a href="#">Developr - <span style="color:#f07b26;font-weight:600">Ankit</span></a>
       </p>
     </div>
   </section>
@@ -417,10 +393,7 @@
   <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
   <!-- custom js -->
   <script type="text/javascript" src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
+ 
 
 </body>
 
