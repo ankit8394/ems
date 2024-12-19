@@ -61,9 +61,10 @@ ob_start()
             <div>
                 <label for="browser" class="lable-all">Department</label><br>
                 <select id="cars" class="inp-all" name="v4">
-                    <option value="J&ampR">J&ampR</option>
-                    <option value="RC">RC</option>
-                    <option value="Shakti Traders">Shakti Traders</option>
+                    <option value="HR">HR</option>
+                    <option value="IT">IT</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Finance">Finance</option>
                 </select>
             </div>
         </div>
