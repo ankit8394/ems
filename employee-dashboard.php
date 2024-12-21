@@ -1,4 +1,7 @@
 <?php
+ob_start()
+?>
+<?php
 include('data-con.php');
 $eid=$_COOKIE['eid'];   
 $mquery=mysqli_query($con,"select * from employee where eid='$eid'");
@@ -65,31 +68,44 @@ $eid=$rowpk['eid'];
         </form>
 
         <?php
-        include('data-con.php');
-        if (isset($_POST['sbt'])) {
-            // Get the image data from the POST request
-            $photo = $_POST['photo'];
 
-            if ($photo) {
-                // Remove the base64 header and save the file
-                $imageData = base64_decode(preg_replace('/^data:image\/\w+;base64,/', '', $photo));
 
-                // Create a unique filename
-                date_default_timezone_set("Asia/kolkata");
-                $datetime = date('dmyhis');
-                $filePath = "attendance-picture/photo_" . $datetime . ".png";
+// Get the current time
+date_default_timezone_set("Asia/kolkata");
+$datetime = date('YmdHis');  // Use a timestamp format for the file name
+$filePath = "attendance-picture/photo_" . $datetime . ".png";
 
-                // Save the image to the directory
-                file_put_contents($filePath, $imageData);
+// Ensure the directory exists, otherwise create it
+if (!file_exists('attendance-picture')) {
+    mkdir('attendance-picture', 0775, true); // Create directory with write permissions
+}
 
-                // Insert the photo path into the database
-                $eid = $rowpk['eid']; // Get the employee ID
-                $query = "INSERT INTO employee_attendance (eid, photo, datetime) VALUES ('$eid', '$filePath', '$datetime')";
-                mysqli_query($con, $query);
-                 echo '<div style="text-align: center; font-size: 20px; font-weight: bold; color: green;">Attendance marked successfully!</div>';;
-            }
+// Handle photo submission
+if (isset($_POST['sbt'])) {
+    $photo = $_POST['photo'];
+
+    if ($photo) {
+        // Remove the base64 header and save the file
+        $imageData = base64_decode(preg_replace('/^data:image\/\w+;base64,/', '', $photo));
+
+        // Save the image to the directory
+        $fileSaved = file_put_contents($filePath, $imageData);
+
+        // Check if the file was saved successfully
+        if ($fileSaved) {
+            // Insert photo path and timestamp into the database
+            $query = "INSERT INTO employee_attendance (eid, photo, datetime, last_photo_timestamp) 
+                      VALUES ('$eid', '$filePath', NOW(), NOW())";
+            mysqli_query($con, $query);
+            echo '<div style="text-align: center; font-size: 20px; font-weight: bold; color: green;">Attendance marked successfully!</div>';
+        } else {
+            echo '<div style="text-align: center; font-size: 20px; font-weight: bold; color: red;">Failed to save photo!</div>';
         }
-        ?>
+    }
+}
+?>
+
+
 
     <script>
         const video = document.getElementById('video');

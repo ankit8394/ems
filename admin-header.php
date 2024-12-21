@@ -17,6 +17,7 @@ $photo=$rowpk['photo'];
                         <li><a href="dashboard-admin.php">DASHBOARD</a></li>
                         <li><a href="department.php">DEPARTMENT</a></li>
                         <li><a href="all-employee-admin.php">EMPLOYEES</a></li>
+                        <li><a href="emp-attendance.php">EMP-Attendance</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3" id="navbox2">
@@ -41,6 +42,7 @@ $photo=$rowpk['photo'];
                     <li><a href="dashboard-admin.php">DASHBOARD</a></li>
                     <li><a href="department.php">DEPARTMENT</a></li>
                     <li><a href="all-employee-admin.php">EMPLOYEES</a></li>
+                    <li><a href="emp-attendance.php">EMP-Attendance</a></li>
                     <li><a href="admin-logout.php"><button id="log-out" class="btn btn-danger">logout</button></a></li>
                 </ul>
             </li>
