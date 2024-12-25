@@ -16,6 +16,6 @@ Bootstrap (for responsive and modern UI components)<br>
 JavaScript<br>
 jQuery<br><br>
 <strong>Backend:</strong><br>
-PHP<br>
+PHP<br><br>
 <strong>Database:</strong><br>
 MySQL<br>
