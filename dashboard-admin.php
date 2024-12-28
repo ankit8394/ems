@@ -61,12 +61,10 @@ $checkin_yesterday = $row_yesterday['checkin_yesterday'];
 
 <div id="ssbig">
             <div class="row" id="d1col">     
-                <div class="col-sm-10" >
+                <div class="col-sm-12" >
                 <i class="fa-solid fa-house"  style="font-size:14pt;margin:10px"></i><a href="dashboard-admin.php" class="admi"><span id="ds1">Dashboard</span></a>
                 </div>
-                <div class="col-sm-2" id="d2">
-                <i class="fa-solid fa-house" style="font-size:12pt;padding:5px"></i><span style="padding:4px">/</span><a href="dashboard-admin.php" class="admi">Dashboard</a>
-                </div>
+              
             </div>
             <div class="row" id="row123">
                 <div class="col-sm-12">
@@ -111,25 +109,25 @@ $checkin_yesterday = $row_yesterday['checkin_yesterday'];
             </div>
         </div>
     </div>
-    <div class="row">
+                     <div class="row">
                         <div class="col-sm-12">
                             <div class="dash-small">
                                 <div class="back">
-                                    <i  id="sp1" class="fa-solid fa-users"></i><span class="same"><a class="admi" href="#">Registered Employees</a></span><span class="upd">0</span>
+                                    <i  id="sp1" class="fa-solid fa-users"></i><span class="same"><a class="admi" href="#">Registered Employees</a></span><span class="upd"><?php echo $count; ?></span>
                                 </div>
                                 <div class="back">
-                                    <i id="sp1" style="background-color:#FFC107" class="fa-solid fa-file"></i><span class="same"><a class="admi" href="#">Listed Department</a></span><span class="upd">0</span>
+                                <i id="sp1" style="background-color:#FFC107" class="fa-solid fa-file"></i><span class="same"><a class="admi" href="#">Listed Department</a></span><span class="upd"><?php echo $countd; ?></span>
                                 </div>
                                 <hr>
-                                <div class="col-sm-12" id="att">
+                                <div id="att">
                                      Attandence Details
                                 </div>
                                 <hr>
                                 <div class="back">
-                                    <i  id="sp1" style="background:#17A2B8" class="fa-solid fa-user"></i><span class="same"><a class="admi" href="#">Employee Checkin Today</a></span><span class="upd">0</span>
+                                <i  id="sp1" style="background:#17A2B8" class="fa-solid fa-user"></i><span class="same"><a class="admi" href="#">Employee Checkin Today</a></span><span class="upd"><?php echo $checkin_today; ?></span>
                                 </div>
                                 <div class="back">
-                                    <i  id="sp1" style="background:#F05D06" class="fa-regular fa-calendar-days"></i><span class="same"><a class="admi" href="#">Employee Checkin Yesterday</a></span><span class="upd">0</span>
+                                <i  id="sp1" style="background:#F05D06" class="fa-regular fa-calendar-days"></i><span class="same"><a class="admi" href="#">Employee Checkin Yesterday</a></span><span class="upd"><?php echo $checkin_yesterday; ?></span>
                                 </div>
                             </div>
                         </div>
