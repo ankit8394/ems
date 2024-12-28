@@ -616,9 +616,14 @@ video, canvas {
     }
 
     .img-logo{
-        height: 20px;
-        width: 20px;
-        margin-left: -40px;
+        height: 50px;
+        width: 50px;
+        margin-left: 10px;
+    }
+    .back {
+        font-size: 10pt;
+        max-width: 400px;
+        text-align: start;
     }
     #box1{
         margin: 0px;

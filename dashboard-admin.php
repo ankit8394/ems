@@ -1,10 +1,31 @@
 <?php
 include('data-con.php');
 $aquery=mysqli_query($con, "select * from employee");
-$count=mysqli_num_rows($aquery);
+$count=mysqli_num_rows($aquery);//this is how many emp are registered//
 $akquery=mysqli_query($con, "select * from department");
-$countd=mysqli_num_rows($akquery)
+$countd=mysqli_num_rows($akquery)//this is how many dep are registered//
+?>
 
+
+
+<?php
+include('data-con.php');
+
+// Get today's date and yesterday's date
+$today = date('Y-m-d');
+$yesterday = date('Y-m-d', strtotime('-1 day'));
+
+// Query to count today's check-ins
+$query_today = "SELECT COUNT(*) as checkin_today FROM employee_attendance WHERE DATE(datetime) = '$today'";
+$result_today = mysqli_query($con, $query_today);
+$row_today = mysqli_fetch_assoc($result_today);
+$checkin_today = $row_today['checkin_today'];
+
+// Query to count yesterday's check-ins
+$query_yesterday = "SELECT COUNT(*) as checkin_yesterday FROM employee_attendance WHERE DATE(datetime) = '$yesterday'";
+$result_yesterday = mysqli_query($con, $query_yesterday);
+$row_yesterday = mysqli_fetch_assoc($result_yesterday);
+$checkin_yesterday = $row_yesterday['checkin_yesterday'];
 ?>
 
 
@@ -74,11 +95,11 @@ $countd=mysqli_num_rows($akquery)
             <div class="row">
                         <div class="col-sm-6">
                              <div class="back">
-                                <i  id="sp1" style="background:#17A2B8" class="fa-solid fa-user"></i><span class="same"><a class="admi" href="#">Employee Checkin Today</a></span><span class="upd">0</span>
+                                <i  id="sp1" style="background:#17A2B8" class="fa-solid fa-user"></i><span class="same"><a class="admi" href="#">Employee Checkin Today</a></span><span class="upd"><?php echo $checkin_today; ?></span>
                             </div>                        </div>
                         <div class="col-sm-6">
                              <div class="back">
-                                <i  id="sp1" style="background:#F05D06" class="fa-regular fa-calendar-days"></i><span class="same"><a class="admi" href="#">Employee Checkin Yesterday</a></span><span class="upd">0</span>
+                                <i  id="sp1" style="background:#F05D06" class="fa-regular fa-calendar-days"></i><span class="same"><a class="admi" href="#">Employee Checkin Yesterday</a><span class="upd"><?php echo $checkin_yesterday; ?></span>
                             </div>
                         </div>
                     </div>
