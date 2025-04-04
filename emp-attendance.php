@@ -61,7 +61,8 @@
                                             <th>SERIAL-NUMBER</th>
                                             <th>EMPLOYEE-ID</th>
                                             <th>NAME</th>
-                                            <th>PHOTO</th>
+                                            <th>EMP PHOTO</th>
+                                            <th>ATTENDANCE PHOTO</th>
                                             <th>Date and Time</th>
                                         </tr>
                                     </thead>
@@ -69,37 +70,47 @@
                                         <?php
                                         include('data-con.php');
                                         $cnt = 1;
-
+                                        
                                         // Default query
                                         $queryStr = "
-                                            SELECT ea.eid, ea.datetime, e.full_name, e.photo 
+                                            SELECT ea.eid, ea.datetime, e.full_name, e.photo, ea.att_photo 
                                             FROM employee_attendance ea
                                             JOIN employee e ON ea.eid = e.eid
                                         ";
-
-                                        // Filter by date range if form is submitted
-                                        if (isset($_POST['filter'])) {
+                                        
+                                        // Check if filtering is applied
+                                        if (isset($_POST['filter']) && !empty($_POST['start_date']) && !empty($_POST['end_date'])) {
                                             $start_date = $_POST['start_date'];
                                             $end_date = $_POST['end_date'];
-                                            $queryStr .= " WHERE DATE(ea.datetime) BETWEEN '$start_date' AND '$end_date'";
+                                        
+                                            // Using prepared statements to prevent SQL injection
+                                            $queryStr .= " WHERE DATE(ea.datetime) BETWEEN ? AND ?";
+                                            $stmt = mysqli_prepare($con, $queryStr);
+                                            mysqli_stmt_bind_param($stmt, "ss", $start_date, $end_date);
+                                            mysqli_stmt_execute($stmt);
+                                            $result = mysqli_stmt_get_result($stmt);
+                                        } else {
+                                            $result = mysqli_query($con, $queryStr);
                                         }
-
-                                        $query = mysqli_query($con, $queryStr);
-
+                                        
                                         // Display filtered data
-                                        while ($row = mysqli_fetch_array($query)) {
+                                        while ($row = mysqli_fetch_array($result)) {
                                             ?>
                                             <tr style="text-align:center">
-                                                <td><?php echo $cnt; $cnt++; ?></td>
+                                                <td><?php echo $cnt++; ?></td>
                                                 <td><?php echo htmlspecialchars($row['eid']); ?></td>
                                                 <td><?php echo htmlspecialchars($row['full_name']); ?></td>
                                                 <td>
                                                     <img class="pro" src="<?php echo htmlspecialchars($row['photo']); ?>" alt="No Photo" style="width:50px; height:50px; border-radius:50%;">
                                                 </td>
+                                                <td>
+                                                    <img class="pro" src="<?php echo htmlspecialchars($row['att_photo']); ?>" alt="No Attendance Photo" style="width:50px; height:50px; border-radius:50%;">
+                                                </td>
                                                 <td><?php echo htmlspecialchars($row['datetime']); ?></td>
                                             </tr>
                                             <?php
                                         }
+                                        
                                         ?>
                                     </tbody>
                                 </table>
